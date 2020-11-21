@@ -1,0 +1,256 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: darksalmon;
+        background-blend-mode: color-burn;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        /*margin: 1em 0;
+    padding: 10px 0;*/
+        color: white;
+        background-color: indigo;
+        height: auto;
+    }
+    
+    #logo {
+        display: inline-block;
+        margin: 5px;
+        width: 25%;
+        /*
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 10px;*/
+    }
+    
+    #premier-logo {
+        /*vertical-align: middle;*/
+        /*display: block;*/
+        float: left;
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        visibility: visible;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 2%;
+    }
+    
+    h1 {
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: normal;
+        padding-top: 8%;
+    }
+    
+    h2 i {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: lighter;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    nav {
+        display: block;
+        margin-top: 20px;
+    }
+    
+    .main-list {
+        display: inline-block;
+        padding: 10px;
+        /*font-size: 20px;*/
+    }
+    
+    .main-list a {
+        text-decoration: none;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 17px;
+        padding: 0px 14px;
+    }
+    
+    .main-list a:hover {
+        color: red;
+        border-bottom: 1.5px solid white;
+    }
+    
+    form {
+        display: block;
+        margin-top: 24px;
+        margin-right: 20px;
+        border: none;
+        outline-style: none;
+    }
+    
+    input[type="text"] {
+        width: 250px;
+        padding: 8px;
+        outline: none;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    
+    input[type="submit"] {
+        padding: 8px;
+        color: white;
+        background-color: blue;
+        font-size: 13px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border: none;
+        outline: none;
+        position: relative;
+        left: -5px;
+    }
+    
+    input[type="submit"]:hover {
+        color: red;
+    }
+    /*Drop-down navigation bar*/
+    
+    nav {
+        overflow: hidden;
+    }
+    
+    .d {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .d .d-btn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: indigo;
+        /*text-transform: uppercase;*/
+    }
+    
+    .d-btn:hover {
+        border-bottom: 1.4px solid white;
+        color: red;
+        /* padding-bottom: 0;*/
+    }
+    
+    .d-content {
+        display: none;
+        position: absolute;
+        background: indigo;
+        width: 100%;
+        left: 0;
+        z-index: 10;
+    }
+    
+    .d:hover .d-content {
+        display: block;
+    }
+    /*styling for the season*/
+    
+    .d-season {
+        display: none;
+        position: absolute;
+        background: indigo;
+        width: 10%;
+        text-align: center;
+        line-height: normal;
+        /*left: 0;*/
+        z-index: 10;
+    }
+    
+    .d:hover .d-season {
+        display: block;
+    }
+    
+    .d-season li {
+        list-style-type: none;
+    }
+    
+    .d-season li a {
+        text-decoration: none;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        font-size: 15px;
+        font-style: italic;
+    }
+    
+    .d-season li a:hover {
+        color: red;
+        border-bottom: 1.4px solid white;
+    }
+    /*season styling ends here*/
+    
+    .column {
+        color: white;
+        float: left;
+        width: 16.5%;
+        padding: 10px;
+        background-color: indigo;
+        height: 180px;
+    }
+    
+    .column a {
+        font-family: 'Times New Roman', Times, serif;
+        display: block;
+        float: none;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+    }
+    
+    .column a:hover {
+        border-bottom: 1.4px solid white;
+        color: red;
+    }
+    
+    .row:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    /*styling for the mysql table results*/
+    
+    table {
+        text-align: center;
+        text-justify: auto;
+        margin-left: 10%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-weight: lighter;
+        font-style: normal;
+        width: 80%;
+        border-collapse: collapse;
+        background-color: firebrick;
+        color: white;
+    }
+    
+    tr:nth-child(even) {
+        background-color: darkturquoise;
+        color: black;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    /*footer styling */
+    
+    footer {
+        background-color: indigo !important;
+        color: white;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 100%;
+        display: flex;
+    }
+    
+    .foot {
+        width: 33.33%;
+    }
