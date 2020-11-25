@@ -4,16 +4,21 @@ $user = "root";
 $password = "";
 $db = "premier_league";
 
-$conn = mysqli_connect($host, $user, $password, $db);
+$conn = mysqli_connect("$host", "$user", "$password", "$db");
+/*
+$newSeason = "CREATE TABLE season(ID INT NOT NULL AUTO_INCREMENT,
+Home_Team VARCHAR(50),
+Away_Team VARCHAR(50),
+Home_Goals INT(11),
+Away_Goals INT(11),
+PRIMARY KEY(ID)
+)";
 
-$newSeason = "CREATE TABLE season_11(
-    a_Date int(11) NOT NULL,
-    HomeTeam varchar(50) NOT NULL,
-    AwayTeam varchar(50) NOT NULL,
-    FTHG int(11) NOT NULL,
-    FTAG int(11) NOT NULL
+$result = mysqli_query($conn, $newSeason) or die("Bad Create: $newSeason");
+*/
+$update = "INSERT INTO season(Home_Team, Away_Team, Home_Goals, Away_Goals)
+VALUES('Arsenal','Manchester United', '2', '3')";
 
-);";
+$updateResult = mysqli_query($conn, $update);
 
-mysqli_query($conn, $newSeason);
 ?>

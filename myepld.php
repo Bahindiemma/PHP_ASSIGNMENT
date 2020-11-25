@@ -9,9 +9,21 @@ $IPATH = $_SERVER["DOCUMENT_ROOT"]."/PHP-ASSIGNMENT/";
 include($IPATH."top.html");
 
 ?>  
-
-<h2 style="text-align: center;"><i>Welcome to English Premier League</i></h2>
-<img src="images/epld.jpg" style="width:500px;height:500px;background-repeat:no-repeat;border-radius:25%;margin:0 30%;text-align:center;>
+<br>
+<h2 style="text-align: center;" id="h2"><i>Welcome to English Premier League</i></h2>
+<img src="images/epld.jpg" id="home-image">
+<form action="#" method="POST" id="comment-section">
+    <h3>Leave a Reply</h3><br>
+    <p>Your email address will not be published. Required field are marked<span>*</span></p>
+    <p>Comment</p>
+    <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
+    <p>Name<span>*</span></p>
+    <input type="text" name="name" id="name"><br>
+    <p>Email<span>*</span></p>
+    <input type="email" name="email"><br>
+    <button type="submit">POST</button>
+    <br>
+</form>
 <?php
 include($IPATH."bottom.html");
     ?>

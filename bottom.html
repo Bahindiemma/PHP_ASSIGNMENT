@@ -12,10 +12,29 @@
         }
         
         footer {
-            display: inline-flex;
             background-color: indigo !important;
             color: white;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-bottom: 10px;
+        }
+        
+        #main-footer {
+            width: 100%;
+            display: inline-flex;
+        }
+        
+        @media (max-width: 1200px) {
+            #main-footer {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+        .foot p {
+            color: white;
+            text-decoration: none;
+            border: none;
         }
         
         .foot {
@@ -24,8 +43,16 @@
             line-height: 25px;
         }
         
-        p a {
-            color: white;
+        @media (max-width: 1200px) {
+            .foot {
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        
+        .foot a {
+            color: white !important;
             text-decoration: none;
         }
         
@@ -33,6 +60,12 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+        }
+        
+        @media (max-width: 1200px) {
+            #logo {
+                flex-direction: column;
+            }
         }
         
         #premier-logo {
@@ -57,31 +90,37 @@
 
 <body>
     <footer>
-        <div class="foot">
-            <p>Contact Us</p>
-            <p>facebook</p>
-            <p>Twitter</p>
-            <p>Instagram</p>
-            <hr/>
-            <i>&copy;All Rights Reversed 2020.</i>
-        </div>
-        <div class="foot">
-            <p><a href="#">Results</a></p>
-            <p><a href="#">Teams</a></p>
-            <p><a href="#">Table</a></p>
-            <p><a href="#">Season</a></p>
-            <p><a href="#">Fixture</a></p>
+        <div id="main-footer">
+            <div class="foot">
+                <p>Contact Us</p>
+                <p>facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
 
-        </div>
-        <div class="foot">
-            <p>location</p>
-            <p>Funders</p>
-            <p>Blog</p>
-            <div id="logo">
-                <img src="images/premier.png" id="premier-logo" />
-                <h1>Premier League</h1>
+            </div>
+            <div class="foot">
+                <p><a href="#">Results</a></p>
+                <p><a href="#">Teams</a></p>
+                <p><a href="#">Table</a></p>
+                <p><a href="#">Season</a></p>
+                <p><a href="#">Fixture</a></p>
+
+            </div>
+            <div class="foot">
+                <p>location</p>
+                <p>Funders</p>
+                <p>Blog</p>
+                <div id="logo">
+                    <img src="images/premier.png" id="premier-logo" />
+                    <h1>Premier League</h1>
+                </div>
+
             </div>
         </div>
+        <hr/>
+        <p style="text-align: center;font-size: 20px;"><i>&copy;All Rights Reversed 2020.</i></p>
+    </footer>
+
 </body>
 
 </html>
