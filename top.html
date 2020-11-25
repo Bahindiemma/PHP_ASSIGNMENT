@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bacon.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/premier.png" id="premier-logo" />
+            <h1>English Premier League</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="main-list"><a href="myepld.php">Home</a></li>
+                <li class="main-list"><a href="search-all.php">Tables</a></li>
+                <li class="main-list"><a href="#">Fixture</a></li>
+                <li class="main-list"><a href="#">Results</a></li>
+                <div class="d list">
+                    <button class="d-btn">Seasions</button>
+                    <div class="d-season" style="float: none;">
+                        <ul>
+                            <li class="season" name="season-one"><a href="search-degree2.php">season one</a></li>
+                            <li class="season" name="season-two"><a href="#">season Two</a></li>
+                            <li class="season" name="season-three"><a href="#">season Three</a></li>
+                            <li class="season" name="season-four"><a href="#">season Four</a></li>
+                            <li class="season" name="season-five"><a href="#">season Five</a></li>
+                            <li class="season" name="season-six"><a href="#">season Six</a></li>
+                            <li class="season" name="season-seven"><a href="#">season Seven</a></li>
+                            <li class="season" name="season-eight"><a href="#">season Eight</a></li>
+                            <li class="season" name="season-nine"><a href="#">season Nine</a></li>
+                            <li class="season" name="season-ten"><a href="#">season Ten</a></li>
+                            <li class="season" name="new-season"><a href="#">Add season</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d">
+                    <button class="d-btn">Team</button>
+                    <div class="d-content">
+                        <form action="search-specific.php" method="POST">
+                            <div class="row">
+                                <div class="column">
+                                    <a href="search-specific.php" name="arsenal">Arsenal</a>
+                                    <a href="#">Aston Villa</a>
+                                    <a href="#">Barnsley</a>
+                                    <a href="#">Birmingham City</a>
+                                    <a href="#">Blackburn Rovers</a>
+                                    <a href="#">Blackpool</a>
+                                    <a href="#">Bolton Wanderers</a>
+                                    <a href="#">Bradford City</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Burnley</a>
+                                    <a href="#">Cardiff City</a>
+                                    <a href="#">Charlton Athletic</a>
+                                    <a href="#">Chelsea</a>
+                                    <a href="#">Coventry City</a>
+                                    <a href="#">Crystal Palace</a>
+                                    <a href="#">Derby County</a>
+                                    <a href="#">Everton</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Fulham</a>
+                                    <a href="#">Hull City</a>
+                                    <a href="#">Ipswich Town</a>
+                                    <a href="#">Leeds United</a>
+                                    <a href="#">Leicester City</a>
+                                    <a href="#">Liverpool</a>
+                                    <a href="#">Manchester City</a>
+                                    <a href="#">Manchester United</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Middlesbrough</a>
+                                    <a href="#">Newcastle United</a>
+                                    <a href="#">Norwich City</a>
+                                    <a href="#">Nottingham Forest</a>
+                                    <a href="#">Oldham Athletic</a>
+                                    <a href="#">Portsmouth</a>
+                                    <a href="#">Queens Park Rangers</a>
+                                    <a href="#">Reading</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Sheffield United</a>
+                                    <a href="#">Sheffield Wednesday</a>
+                                    <a href="#">Southampton</a>
+                                    <a href="#">Stock City</a>
+                                    <a href="#">Sunderland</a>
+                                    <a href="#">Swansea City</a>
+                                    <a href="#">Swindon Town</a>
+                                </div>
+                                <div class="column">
+                                    <a href="#">Watford</a>
+                                    <a href="#">West Bromwich Albion</a>
+                                    <a href="#">Westham United</a>
+                                    <a href="#">Weagan Athletic</a>
+                                    <a href="#">Wimbledon</a>
+                                    <a href="#">Wolverhampton Wanderers</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </ul>
+        </nav>
+        <form action="search-all.php" method="POST">
+            <input type="text" placeholder="search....." name="search">
+            <input type="submit" value="Search" name="search-button">
+        </form>
+    </header>
+</body>
+
+</html>

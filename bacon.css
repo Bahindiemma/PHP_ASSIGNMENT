@@ -1,0 +1,470 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: darkgray;
+        background-blend-mode: color-burn;
+    }
+    
+    @media (max-width:1200px) {
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    #home-image {
+        width: 250px;
+        height: 250px;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        background-color: indigo;
+        height: auto;
+    }
+    
+    @media (max-width:1200px) {
+        header {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    
+    #logo {
+        display: inline-block;
+        margin: 5px;
+        width: 25%;
+    }
+    
+    @media (max-width:1200px) {
+        #logo {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    
+    #premier-logo {
+        /*vertical-align: middle;*/
+        /*display: block;*/
+        float: left;
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        visibility: visible;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 2%;
+    }
+    
+    @media (max-width:1200px) {
+        #premier-logo {
+            float: none;
+            margin: 0 auto;
+            margin-top: 2%;
+        }
+    }
+    
+    h1 {
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: normal;
+        padding-top: 8%;
+    }
+    
+    @media (max-width:1200px) {
+        h1 {
+            padding-top: 5%;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+    
+    #h2 {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: lighter;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    @media (max-width:1200px) {
+        #h2 {
+            font-size: 1.5em;
+        }
+    }
+    
+    @media (max-width:350px) {
+        #h2 {
+            font-size: 1rem;
+        }
+    }
+    
+    nav {
+        display: block;
+        margin-top: 20px;
+    }
+    
+    @media (max-width:1200px) {
+        nav {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    
+    .main-list {
+        display: inline-block;
+        padding: 10px;
+        /*font-size: 20px;*/
+    }
+    
+    @media (max-width:1200px) {
+        .main-list {
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+    
+    .main-list a {
+        text-decoration: none;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 17px;
+        padding: 0px 14px;
+    }
+    
+    .main-list a:hover {
+        color: red;
+        border-bottom: 1.5px solid white;
+    }
+    
+    form {
+        display: block;
+        margin-top: 24px;
+        margin-right: 20px;
+        border: none;
+        outline-style: none;
+    }
+    
+    @media (max-width:1200px) {
+        form {
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+    }
+    
+    input[type="text"] {
+        width: 250px;
+        padding: 8px;
+        outline: none;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    
+    input[type="submit"] {
+        padding: 8px;
+        color: white;
+        background-color: blue;
+        font-size: 13px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border: none;
+        outline: none;
+        position: relative;
+        left: -5px;
+    }
+    
+    @media (max-width:300px) {
+        input[type="text"] {
+            width: 165px;
+        }
+        input[type="submit"] {
+            width: 60px;
+        }
+    }
+    
+    input[type="submit"]:hover {
+        color: red;
+    }
+    /*Drop-down navigation bar*/
+    
+    nav {
+        overflow: hidden;
+    }
+    
+    .d {
+        float: left;
+        overflow: hidden;
+    }
+    
+    @media (max-width:1200px) {
+        .d {
+            display: block;
+            float: none;
+        }
+    }
+    
+    @media (max-width:1200px) {
+        ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    
+    .d .d-btn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: indigo;
+        /*text-transform: uppercase;*/
+    }
+    
+    .d-btn:hover {
+        border-bottom: 1.4px solid white;
+        color: red;
+        /* padding-bottom: 0;*/
+    }
+    
+    .d-content {
+        display: none;
+        position: absolute;
+        background: indigo;
+        width: 100%;
+        left: 0;
+        z-index: 10;
+    }
+    
+    @media (max-width:1200px) {
+        .d-content {
+            width: 98%;
+            position: relative;
+            text-align: justify;
+        }
+    }
+    
+    .d:hover .d-content {
+        display: block;
+    }
+    /*styling for the season*/
+    
+    .d-season {
+        display: none;
+        position: absolute;
+        background: indigo;
+        width: 10%;
+        text-align: center;
+        line-height: normal;
+        /*left: 0;*/
+        z-index: 10;
+    }
+    
+    @media (max-width:1200px) {
+        .d-season {
+            width: 100%;
+            position: relative;
+            text-align: justify;
+        }
+    }
+    
+    @media (max-width:1200px) {
+        .list {
+            float: none;
+        }
+    }
+    
+    .d:hover .d-season {
+        display: block;
+    }
+    
+    .d-season li {
+        list-style-type: none;
+    }
+    
+    .d-season li a {
+        text-decoration: none;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        font-size: 15px;
+        font-style: italic;
+        text-align: justify;
+    }
+    
+    .d-season li a:hover {
+        color: red;
+        border-bottom: 1.4px solid white;
+    }
+    /*season styling ends here*/
+    
+    .column {
+        color: white;
+        float: left;
+        width: 16.5%;
+        padding: 10px;
+        background-color: indigo;
+        height: 180px;
+    }
+    
+    .column a {
+        font-family: 'Times New Roman', Times, serif;
+        display: block;
+        float: none;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+    }
+    
+    .column a:hover {
+        border-bottom: 1.4px solid white;
+        color: red;
+    }
+    
+    .row:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    /*styling for the mysql table results*/
+    
+    table {
+        text-align: center;
+        text-justify: auto;
+        margin-left: 10%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-weight: lighter;
+        font-style: normal;
+        width: 80%;
+        border-collapse: collapse;
+        background-color: firebrick;
+        color: white;
+    }
+    
+    @media (max-width:960px) {
+        table {
+            width: 80%;
+            margin-left: 5%;
+            font-size: 14px;
+            margin: 0 auto;
+        }
+        ;
+    }
+    
+    tr:nth-child(even) {
+        background-color: darkgray;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        /*
+        font-size: 20px;*/
+        font-weight: lighter;
+    }
+    
+    @media (max-width:960px) {
+        tr:nth-child {
+            font-size: 10px;
+        }
+    }
+    /*styling for the comment section
+
+*/
+    
+    #comment-section {
+        margin-left: 25%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 15px;
+        color: black;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    @media (max-width:1200px) {
+        #comment-section {
+            margin-left: 10%;
+            width: 80%;
+        }
+    }
+    
+    #comment {
+        width: 40%;
+        border: none;
+        outline-style: none;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        font-style: italic;
+        padding: 10px;
+    }
+    
+    #name {
+        border-radius: 0;
+        width: 40%;
+        border: none;
+        outline-style: none;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        font-style: italic;
+    }
+    
+    span {
+        color: red;
+        font-weight: lighter;
+    }
+    
+    input[type="email"] {
+        width: 40%;
+        padding: 8px;
+        border: none;
+        outline-style: none;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        font-style: italic;
+    }
+    
+    @media (max-width:1200px) {
+        #comment,
+        #name,
+        input[type="email"] {
+            width: 90%;
+            margin: 0;
+        }
+    }
+    
+    button[type="submit"] {
+        width: 5%;
+        padding: 5px;
+        color: white;
+        background-color: blue;
+        margin-top: 10px;
+    }
+    
+    @media (max-width:1200px) {
+        button[type="submit"] {
+            width: 30%;
+            padding: 10px;
+        }
+    }
